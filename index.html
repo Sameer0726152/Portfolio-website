@@ -27,11 +27,11 @@
 
         <section id="hero">
 
-            <h1 id = "hero-title">Hi, I'm Sameer</h1>
-            <h2>Frontend Developer</h2>
+            <h1 id = "hero-title" class = "yellow-title">Hi, I'm Sameer</h1>
+            <h2 id = "hero-role">Frontend Developer</h2>
             <p>Building modern and responsive web experiences</p>
             <div class="hero-buttons">
-            <a href="#contact">Contact Me</a>
+            <a href="#contact" id = "contact-btn">Contact Me</a>
             <a href="#projects">View Projects</a>
             </div>
 
@@ -41,7 +41,8 @@
 
             <img src="images/me.png"
             alt="Sameer Profile"
-            class="about-image">
+            class="about-image"
+            id = "profile-image">
             <div class="about-content">
             <h2>About Me</h2>
             <h3>Aspiring Frontend Developer</h3>
@@ -51,14 +52,14 @@
             <p>Currently learning HTML, CSS,
             JavaScript and building projects
             to improve my skills.</p>
-            <a href="#">Download Resume</a>
+            <a href="#" id = "resume-btn">Download Resume</a>
             </div>
 
         </section>
 
-        <section id="skills">
-
+        <section id="skills">   
             <h2>Skills</h2>
+            <button id = "add-skill">Add Skill</button>
             <div class="skills-container">
             <div class="skill-card">JAVA</div>
             <div class="skill-card">HTML</div>
@@ -73,6 +74,9 @@
         <section id="projects">
 
             <h2>Projects</h2>
+            <button id="add-project">
+                Add Project
+            </button>
             <div class="project-container">
 
             <article class="project-card">
@@ -137,13 +141,22 @@
             </div>
             </div>
 
-            <form class="contact-form">
-                <input type="text"
-                placeholder="Your Name">
-                <input type="email"
-                placeholder="Your Email">
-                <textarea placeholder="Your Message"></textarea>
-                <button type="submit">Send Message</button>
+            <form class="contact-form" id="contact-form">
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Your Name">
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Your Email">
+                <textarea
+                    id="message"
+                    placeholder="Your Message">
+                </textarea>
+                <button type="submit">
+                    Send Message
+                </button>
             </form>
 
             </div>
